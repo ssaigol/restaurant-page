@@ -1,6 +1,10 @@
 /* Menu Styling */
+.menu-page {
+    border-radius: 10% 25%;
+}
+
 .menu-page > h1 {
-    padding-left: 40px;
+    padding-right: 40px;
     text-decoration: underline;
 }
 

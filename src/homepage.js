@@ -4,7 +4,6 @@ export const renderHomepage = function () {
     //Query content card and add class for homepage
     const contentCard = document.getElementById("content-card");
     contentCard.classList.add("home-page");
-    contentCard.style.visibility = "visible";
     //Create header text
     const headerText = document.createElement("h1");
     headerText.textContent = "Welcome to the Ice Cream Emporium!";

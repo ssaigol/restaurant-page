@@ -1,4 +1,9 @@
 /* Homepage Styling */
+.home-page {
+    border-radius: 25% 10%;
+}
+
+
 .home-page > h1 {
     padding-left: 40px;
 }
