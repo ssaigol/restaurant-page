@@ -1,0 +1,26 @@
+/* Homepage Styling */
+.home-page > h1 {
+    padding-left: 40px;
+}
+
+.home-page > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.home-page > div > p, .home-page > div > ul {
+    font-size: 1.3rem;
+}
+
+.home-page > div > p {
+    text-align: center;
+}
+
+.home-page > div > ul {
+    text-align: left;
+    font-style: italic;
+    line-height: 40px;
+}
