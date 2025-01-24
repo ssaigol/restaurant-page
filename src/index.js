@@ -1,22 +1,23 @@
 import "./styles.css";
 import {renderHomepage} from "./homepage";
+import {renderMenuPage} from "./menupage";
+
+const card = document.getElementById("content-card");
+window.addEventListener("load", renderHomepage);
 
 const homeButton = document.getElementById("nav-home");
-const card = document.getElementById("content-card");
 homeButton.addEventListener("click", () => {
-    if (checkCurrentPage()) {
+        card.classList.remove("home-page", "menu-page", "about-page", "contact-page");
         clearCard();
         renderHomepage();
-    };
+        });
 
-})
-
-
-const checkCurrentPage = () => {
-    if (!card.classList.contains("home-page") && !card.classList.contains("menu-page") && !card.classList.contains("about-page") && !card.classList.contains("contact-page")) {
-        return true;
-    } else return false;
-};
+const menuButton = document.getElementById("nav-menu");
+menuButton.addEventListener("click", () => {
+    card.classList.remove("home-page", "menu-page", "about-page", "contact-page");
+    clearCard();
+    renderMenuPage();
+    });
 
 const clearCard = () => {
     while (card.firstChild) {

@@ -1,0 +1,69 @@
+/* Menu Styling */
+.menu-page > h1 {
+    padding-left: 40px;
+    text-decoration: underline;
+}
+
+.menu-page #container {
+    display: grid;
+    width: 90%;
+    height: 80%;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+        "flavors-left flavors-right"
+        "toppings toppings";
+}
+
+.menu-page #flavors-left {
+    grid-area: flavors-left;
+}
+
+.menu-page #flavors-right {
+    grid-area: flavors-right;
+}
+
+.menu-page #flavors-left > ul, .menu-page #flavors-right > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0px 50px;
+    margin: 0;
+}
+
+.menu-page #toppings {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(251, 251, 222);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0px 10px;
+    grid-area: toppings;
+}
+
+.menu-page #toppings > p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 1.1rem;
+    margin: 0.6rem 0 1.3rem;
+
+}
+
+.menu-page #toppings-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: calc(100% - 1.1rem);
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+
+}
