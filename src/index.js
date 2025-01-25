@@ -11,7 +11,6 @@ const menuButton = document.getElementById("nav-menu");
 const aboutButton = document.getElementById("nav-about");
 const contactButton = document.getElementById("nav-contact");
 const dialog = document.getElementById("contact");
-const submit = document.getElementById("submit");
 
 window.addEventListener("load", () => {
     renderHomepage();
@@ -45,8 +44,6 @@ aboutButton.addEventListener("click", (e) => {
 contactButton.addEventListener("click", () => {
     dialog.showModal();
 });
-
-submit.addEventListener("click", () => dialog.close());
 
 const clearCard = () => {
     while (card.firstChild) {
