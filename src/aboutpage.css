@@ -1,0 +1,31 @@
+/* About page styling */
+.about-page {
+    border-radius: 25% 10%;
+}
+
+
+.about-page > h1 {
+    padding-left: 40px;
+}
+
+.about-page > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.about-page > div > p, .about-page > div > ul {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.about-page > div > p {
+    text-align: center;
+}
+
+.about-page > div > ul {
+    text-align: left;
+    line-height: 40px;
+}
