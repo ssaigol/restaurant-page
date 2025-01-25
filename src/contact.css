@@ -1,0 +1,55 @@
+/* Contact form */
+dialog[open] {
+    height: 70%;
+    width: 45%;
+    background-color: beige;
+    /* visibility: visible; */
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+dialog[open] > form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+    padding-left: 120px;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+
+dialog[open] label {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+dialog[open] input, dialog[open] textarea {
+    margin-left: auto;
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+dialog[open] textarea {
+    resize: none;
+    font-size: 0.7rem;    
+}
+
+dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+#submit {
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-right: 20px;
+}

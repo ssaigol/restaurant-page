@@ -57,8 +57,6 @@ nav > button:hover {
     padding: 40px;
     align-items: center;
     border: 3px solid grey;
-
-    border-radius: 25% 10%;
 }
 
 .underline {
